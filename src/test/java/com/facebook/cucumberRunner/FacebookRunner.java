@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		plugin= {"pretty", "html:target/facebookReport.html"},
 		features="src/test/resources/features",
 		glue="com.facebook.stepDefinations",
-		tags="@smoke1",
+		tags="@common",
 		snippets=SnippetType.CAMELCASE
 			
 		)
