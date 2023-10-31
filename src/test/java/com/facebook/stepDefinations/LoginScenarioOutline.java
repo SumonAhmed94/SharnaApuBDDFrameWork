@@ -9,9 +9,10 @@ import io.cucumber.java.en.When;
 
 public class LoginScenarioOutline extends BaseStep {
 	LoginPage lp;
+	String browser="chrome";
 		@Given("users enter {string} and {string} to open app")
 		public void usersEnterAndToOpenApp(String browser, String url) {
-		    openApp(browser, url);
+		    openApp();
 		}
 		@When("users enter {string} and {string} from the users")
 		public void usersEnterAndFromTheUsers(String username, String password) {
