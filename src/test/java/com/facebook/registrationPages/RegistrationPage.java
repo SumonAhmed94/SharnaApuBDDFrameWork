@@ -53,8 +53,6 @@ public class RegistrationPage {
 
 	@FindBy(how=How.ID, using="month") private WebElement bitrthMonth;
 	public WebElement monthDropDownField(String enterYourBirthMonth) {		
-		//Select select = new Select(bitrthMonth);
-		//select.selectByVisibleText(enterYourBirthMonth);
 		dropDown(bitrthMonth, enterYourBirthMonth);
 		return bitrthMonth;
 		
@@ -62,8 +60,6 @@ public class RegistrationPage {
 
 	@FindBy(how=How.ID, using="day") private WebElement bitrthDay;
 	public WebElement dayDropDownField(String enterYourBirthDay) {
-		//Select select = new Select(bitrthDay);
-		//select.selectByVisibleText(enterYourBirthDay);
 		dropDown(bitrthDay, enterYourBirthDay);
 		return bitrthDay;
 		
@@ -71,8 +67,7 @@ public class RegistrationPage {
 
 	@FindBy(how=How.ID, using="year") private WebElement bitrthYear;
 	public WebElement yearDropDownField(String enterYourBirthYear) {
-		//Select select = new Select(bitrthYear);
-		//select.selectByVisibleText(enterYourBirthYear);
+	
 		dropDown(bitrthYear, enterYourBirthYear);
 		return bitrthYear;
 		
